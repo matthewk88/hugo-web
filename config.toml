@@ -1,0 +1,12 @@
+baseURL = 'https://matthewk88.github.io/official-web'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+
+[taxonomies]
+  category = "categories"
+
+[outputs]
+    home = [ "HTML", "JSON", "RSS"]
+
+paginate = 4
