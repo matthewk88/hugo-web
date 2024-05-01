@@ -114,6 +114,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  document
+    .querySelectorAll(".navmenu .has-dropdown span")
+    .forEach((navmenu) => {
+      navmenu.addEventListener("click", function (e) {
+        if (document.querySelector(".mobile-nav-active")) {
+          e.preventDefault();
+          this.parentNode.classList.toggle("active");
+          this.parentNode.nextElementSibling.classList.toggle(
+            "dropdown-active"
+          );
+          e.stopImmediatePropagation();
+        }
+      });
+    });
+
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
