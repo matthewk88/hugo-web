@@ -581,21 +581,8 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: -1;
+  z-index: 1;
   padding-bottom: 160px;
-}
-
-.hero:before {
-  content: "";
-  background: rgba(255, 255, 255, 0);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
-
-.hero .container {
-  position: relative;
-  z-index: 3;
 }
 
 .hero h2 {
@@ -613,6 +600,7 @@ section,
   font-size: 18px;
   margin: 5px 0 0 0;
 }
+
 .hero .btn-getstarted {
   padding: 12px 24px;
 }
